@@ -39,10 +39,8 @@ body {
 	font-size: 50px;
 	font-weight: 400;
 	color: #3e4149;
-	/* min-width: 40%; */
 	display: flex;
 	justify-content: center;
-	/* border: solid 2px #ffc8c8; */
 	padding: 10px;
 	border-radius: 10px;
 }
@@ -98,6 +96,24 @@ body {
 	margin: 5px 25px 5px 25px;
 	text-align: center;
 }
+.loading {
+	margin: auto;
+	background-color: white;
+	border: 16px solid #f3f3f3; /* Light grey */
+	border-top: 16px solid #ff9999; /* Blue */
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
@@ -121,6 +137,7 @@ body {
 	width: 200px;
 	height: 200px;
 	object-fit: cover;
+	object-position: bottom;
 	border-radius: 50%;
 	border: solid 6px #ffc8c8;
 	transition: all 0.3s ease;
@@ -180,10 +197,12 @@ span {
 	color: white;
 }
 
-*/ .close-button {
+.close-button {
 	border: none;
 	background-color: transparent;
 	font-size: 30px;
+	text-align: left;
+	cursor: pointer;
 }
 
 .overlay {
@@ -209,7 +228,8 @@ span {
 	z-index: 50;
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	align-items: center;
+	height: 100%;
 	right: 0;
 	top: 0;
 	position: fixed;
@@ -218,6 +238,50 @@ span {
 	transition: all 0.5s;
 }
 
+.modal img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-top: 25px;
+	border: solid 6px #ffc8c8;
+}
+
+.modal h2 {
+	text-align: center;
+	font-size: 35px;
+}
+
 .modal--open {
 	transform: translateX(0%);
+}
+
+.total {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 200;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 25px;
+}
+
+.remove {
+	background-color: transparent;
+	font-size: 25px;
+	border: none;
+	cursor: pointer;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	padding: 25px 80px 25px 80px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.container p {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	text-align: center;
+	margin: 10px 0px 10px 0px;
 }

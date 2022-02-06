@@ -1,8 +1,6 @@
 import heroImg from '../images/heroimg.png';
 
 const Hero = () => {
-	//click event
-
 	return (
 		<div className="hero">
 			<img src={heroImg} alt="" />

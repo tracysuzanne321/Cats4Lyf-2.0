@@ -1,9 +1,10 @@
 import { ShopCart } from './ShopCart';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ basketItems, removeItemFromBasket }) => {
 	return (
 		<div className="nav">
-			<h1>Cats4Lyf</h1>
+			<Link to="/">Cats4Lyf</Link>
 			<div className="nav-cart">
 				<ShopCart
 					basketItems={basketItems}

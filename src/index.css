@@ -35,7 +35,7 @@ body {
 	color: #828282;
 }
 
-.nav h1 {
+.nav a {
 	font-size: 50px;
 	font-weight: 400;
 	color: #3e4149;
@@ -43,6 +43,7 @@ body {
 	justify-content: center;
 	padding: 10px;
 	border-radius: 10px;
+	text-decoration: none;
 }
 
 .nav-cart {
@@ -79,8 +80,14 @@ body {
 	font-family: 'Quicksand', sans-serif;
 	border-radius: 5px;
 	cursor: pointer;
-	margin-top: 20px;
+	margin-top: 30px;
 	border: solid 2px #ff9999;
+	text-decoration: none;
+}
+
+.hero-side a {
+	text-decoration: none;
+	background-color: transparent;
 }
 
 .hero-side button:hover {
@@ -110,6 +117,7 @@ body {
 	font-weight: 200;
 	font-size: 35px;
 	text-align: center;
+	margin-bottom: 25px;
 }
 
 .hero-side h2 {
@@ -191,6 +199,24 @@ body {
 }
 
 .tile button:hover {
+	background-color: #ff9999;
+	color: white;
+}
+
+.tile a {
+	background-color: white;
+	border: solid 2px #ff9999;
+	margin-left: 10px;
+	padding: 10px 10px 10px 10px;
+	font-size: 15px;
+	font-weight: 300;
+	font-family: 'Quicksand', sans-serif;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.tile a:hover {
 	background-color: #ff9999;
 	color: white;
 }

@@ -1,10 +1,12 @@
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import Tile from './components/Tile';
-import Hero from './components/Hero';
 import GetData from './utils/Getdata';
 import GetImage from './utils/GetImage';
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import AboutMe from './pages/AboutMe';
 
 const App = () => {
 	const [basketItems, setBasketItems] = useState([]);
@@ -33,33 +35,32 @@ const App = () => {
 		setBasketItems(remainingBasketItems);
 	};
 	return (
-		<div className="app">
-			<Navbar
-				basketItems={basketItems}
-				removeItemFromBasket={removeItemFromBasket}
-			/>
-			<div className="home">
-				<Hero />
-				<div className="gallery">
-					{catData.length === 0 ? (
-						<div className="loading"></div>
-					) : (
-						catImages.map((cat, i) => (
-							<Tile
-								name={catData[i]?.name}
-								price={catData[i]?.price}
-								image={cat.url}
-								key={cat.id}
-								id={cat.id}
-								addToBasket={addToBasket}
-							/>
-						))
-					)}
-				</div>
-			</div>
+		<Router>
+			<div className="app">
+				<Navbar
+					basketItems={basketItems}
+					removeItemFromBasket={removeItemFromBasket}
+				/>
+				<Switch>
+					<Route exact path="/">
+						<Home
+							catData={catData}
+							catImages={catImages}
+							addToBasket={addToBasket}
+						/>
+					</Route>
 
-			<Footer />
-		</div>
+					<Route path="/AboutUs">
+						<AboutUs />
+					</Route>
+					<Route path="/AboutMe">
+						<AboutMe />
+					</Route>
+				</Switch>
+
+				<Footer />
+			</div>
+		</Router>
 	);
 };
 

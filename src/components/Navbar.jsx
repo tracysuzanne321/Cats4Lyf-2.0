@@ -9,6 +9,7 @@ const Navbar = ({ basketItems, removeItemFromBasket }) => {
 					basketItems={basketItems}
 					removeItemFromBasket={removeItemFromBasket}
 				/>
+				{basketItems.length === 0 ? '' : <span>{basketItems.length}</span>}
 			</div>
 		</div>
 	);

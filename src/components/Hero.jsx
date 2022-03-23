@@ -1,23 +1,37 @@
-import heroImg from '../images/heroimg.png';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-const Hero = () => {
-	const title = 'Welcome';
-	const subTitle = 'What Greater Gift Than The Love Of a Cat.';
+const Hero = ({
+  image,
+  title,
+  subtitle,
+  to,
+  button,
+  onClick,
+  price,
+  breed,
+  age,
+  city,
+  gender,
+}) => {
+  return (
+    <div className="hero">
+      <img src={image} alt="" />
 
-	return (
-		<div className="hero">
-			<img src={heroImg} alt="" />
+      <div className="hero-side">
+        <h3>{title}</h3>
+        <h2>{subtitle}</h2>
+        <h4>{breed}</h4>
+        <h4>{age}</h4>
+        <h4>{city}</h4>
+        <h4>{gender}</h4>
 
-			<div className="hero-side">
-				<h3>{title}</h3>
-				<h2>{subTitle}</h2>
-				<Link to="/AboutUs" className="hero-button">
-					<button>About Us</button>
-				</Link>
-			</div>
-		</div>
-	);
+        <h2>{price}</h2>
+        <Link to={to} className="hero-button">
+          <button onClick={onClick}>{button}</button>
+        </Link>
+      </div>
+    </div>
+  );
 };
 
 export default Hero;

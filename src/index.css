@@ -1,350 +1,357 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;500&display=swap");
 
 * {
-	font-family: 'Great Vibes', cursive;
-	color: #444f5a;
-	margin: 0;
+  font-family: "Great Vibes", cursive;
+  color: #444f5a;
+  margin: 0;
 }
 
 .home {
-	max-width: 80%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin: auto;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
 }
 
 body {
-	background-image: url(./images/pawp.png);
+  background-image: url(./images/pawp.png);
 }
 
 .nav {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 10px;
-	background-color: white;
-	margin-bottom: 25px;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .nav ul {
-	list-style-type: none;
-	margin: 0;
-	font-size: 35px;
-	color: #828282;
+  list-style-type: none;
+  margin: 0;
+  font-size: 35px;
+  color: #828282;
 }
 
 .nav a {
-	font-size: 50px;
-	font-weight: 400;
-	color: #3e4149;
-	display: flex;
-	justify-content: center;
-	padding: 10px;
-	border-radius: 10px;
-	text-decoration: none;
+  font-size: 50px;
+  font-weight: 400;
+  color: #3e4149;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .nav-cart {
-	position: absolute;
-	left: 80%;
+  position: absolute;
+  left: 80%;
 }
 
 .shop-button {
-	border: none;
-	background-color: transparent;
-	cursor: pointer;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .hero {
-	display: flex;
-	margin: 0;
-	background-color: white;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-	border-radius: 15px;
-	border: solid 4px #ffc8c8;
-	justify-content: center;
+  display: flex;
+  margin: 0;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 15px;
+  border: solid 4px #ffc8c8;
+  justify-content: center;
 }
 .hero-button {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .hero-side button {
-	color: white;
-	background-color: #ff9999;
-	padding: 15px 50px 15px 50px;
-	font-size: 15px;
-	font-weight: 300;
-	font-family: 'Quicksand', sans-serif;
-	border-radius: 5px;
-	cursor: pointer;
-	margin-top: 30px;
-	border: solid 2px #ff9999;
-	text-decoration: none;
+  color: white;
+  background-color: #ff9999;
+  padding: 15px 50px 15px 50px;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Quicksand", sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  border: solid 2px #ff9999;
+  text-decoration: none;
 }
 
 .hero-side a {
-	text-decoration: none;
-	background-color: transparent;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .hero-side button:hover {
-	background-color: white;
-	border: solid 2px #ff9999;
-	color: #444f5a;
+  background-color: white;
+  border: solid 2px #ff9999;
+  color: #444f5a;
 }
 
 .hero img {
-	min-width: 60%;
-	margin: 0;
-	border-bottom-left-radius: 15px;
-	border-top-left-radius: 15px;
-	height: 450px;
-	object-fit: cover;
-	object-position: top;
+  min-width: 60%;
+  margin: 0;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  height: 450px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .hero-side {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-side h3 {
-	font-family: 'Quicksand', sans-serif;
-	font-weight: 200;
-	font-size: 35px;
-	text-align: center;
-	margin-bottom: 25px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 200;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .hero-side h2 {
-	font-weight: 300;
-	font-size: 40px;
-	letter-spacing: 1px;
-	margin: 5px 25px 5px 25px;
-	text-align: center;
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin: 5px 25px 5px 25px;
+  text-align: center;
+}
+
+.hero-side h4 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 200;
+  font-size: 25pxpx;
+  text-align: center;
 }
 .loading {
-	margin: auto;
-	background-color: white;
-	border: 16px solid #f3f3f3; /* Light grey */
-	border-top: 16px solid #ff9999; /* Blue */
-	border-radius: 50%;
-	width: 120px;
-	height: 120px;
-	animation: spin 2s linear infinite;
+  margin: auto;
+  background-color: white;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #ff9999; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
 }
 @keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .gallery {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	text-align: center;
-	margin: 30px 0 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  margin: 30px 0 30px 0;
 }
 .tile {
-	padding: 20px 20px 20px 20px;
-	background-color: white;
-	margin: 10px 5px 10px 2px;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-	border-radius: 15px;
+  padding: 20px 20px 20px 20px;
+  background-color: white;
+  margin: 10px 5px 10px 2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 15px;
 }
 
 .tile img:hover {
-	transform: rotate(3deg);
+  transform: rotate(3deg);
 }
 .tile img {
-	width: 200px;
-	height: 200px;
-	object-fit: cover;
-	object-position: bottom;
-	border-radius: 50%;
-	border: solid 6px #ffc8c8;
-	transition: all 0.3s ease;
-	margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 50%;
+  border: solid 6px #ffc8c8;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
 }
 
 .tile h4 {
-	margin: 0;
-	font-size: 35px;
-	font-weight: 300;
+  margin: 0;
+  font-size: 35px;
+  font-weight: 300;
 }
 
 .tile p {
-	font-family: 'Quicksand', sans-serif;
-	margin: 10px 0 10px 0;
+  font-family: "Quicksand", sans-serif;
+  margin: 10px 0 10px 0;
 }
 
 .tile button {
-	background-color: white;
-	border: solid 2px #ff9999;
-	margin-left: 10px;
-	padding: 10px 10px 10px 10px;
-	font-size: 15px;
-	font-weight: 300;
-	font-family: 'Quicksand', sans-serif;
-	border-radius: 5px;
-	cursor: pointer;
+  background-color: white;
+  border: solid 2px #ff9999;
+  margin-left: 10px;
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Quicksand", sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .tile button:hover {
-	background-color: #ff9999;
-	color: white;
+  background-color: #ff9999;
+  color: white;
 }
 
 .tile a {
-	background-color: white;
-	border: solid 2px #ff9999;
-	margin-left: 10px;
-	padding: 10px 10px 10px 10px;
-	font-size: 15px;
-	font-weight: 300;
-	font-family: 'Quicksand', sans-serif;
-	border-radius: 5px;
-	cursor: pointer;
-	text-decoration: none;
+  background-color: white;
+  border: solid 2px #ff9999;
+  margin-left: 10px;
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Quicksand", sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .tile a:hover {
-	background-color: #ff9999;
-	color: white;
+  background-color: #ff9999;
+  color: white;
 }
 
 .footer {
-	padding: 40px;
-	background-color: #3e4149;
-	text-align: center;
-	font-size: 25px;
-	color: white;
-	margin: 0 auto;
+  padding: 40px;
+  background-color: #3e4149;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin: 0 auto;
 }
 
 .footer-1 {
-	font-family: 'Quicksand', sans-serif;
-	font-weight: 200;
-	font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
 }
 
 .footer-3 {
-	font-family: 'Quicksand', sans-serif;
-	margin-left: 15px;
-	font-weight: 200;
-	font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 15px;
+  font-weight: 200;
+  font-size: 20px;
 }
 span {
-	color: white;
+  color: white;
 }
 
 .close-button {
-	border: none;
-	background-color: transparent;
-	font-size: 30px;
-	text-align: left;
-	cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  text-align: left;
+  cursor: pointer;
 }
 
 .overlay {
-	background: black;
-	z-index: 50;
-	transition: all 0.5s;
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100vw;
-	opacity: 0;
-	pointer-events: none;
+  background: black;
+  z-index: 50;
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .overlay--open {
-	opacity: 0.5;
-	pointer-events: auto;
+  opacity: 0.5;
+  pointer-events: auto;
 }
 
 .modal {
-	background: white;
-	z-index: 50;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 100%;
-	right: 0;
-	top: 0;
-	position: fixed;
-	width: calc(100% / 3);
-	transform: translateX(100%);
-	transition: all 0.5s;
-	overflow: scroll;
+  background: white;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  right: 0;
+  top: 0;
+  position: fixed;
+  width: calc(100% / 3);
+  transform: translateX(100%);
+  transition: all 0.5s;
+  overflow: scroll;
 }
 
 .modal img {
-	width: 70px;
-	height: 70px;
-	border-radius: 50%;
-	object-fit: cover;
-	margin-top: 25px;
-	border: solid 6px #ffc8c8;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 25px;
+  border: solid 6px #ffc8c8;
 }
 
 .modal h2 {
-	text-align: center;
-	font-size: 35px;
+  text-align: center;
+  font-size: 35px;
 }
 
 .modal--open {
-	transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .total {
-	font-family: 'Quicksand', sans-serif;
-	font-weight: 200;
-	font-size: 25px;
-	text-align: center;
-	margin-top: 25px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 25px;
 }
 
 .remove {
-	background-color: transparent;
-	font-size: 25px;
-	border: none;
-	cursor: pointer;
+  background-color: transparent;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
-	padding: 25px 80px 25px 80px;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 80px 25px 80px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .container p {
-	font-family: 'Quicksand', sans-serif;
-	font-weight: 400;
-	font-size: 15px;
-	text-align: center;
-	margin: 10px 0px 10px 0px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
 }
 
 .nav span {
-	color: white;
-	font-family: 'Quicksand', sans-serif;
-	border: solid black 2px;
-	border-radius: 50%;
-	padding: 3px 8px 3px 8px;
-	position: absolute;
-	right: -15px;
-	bottom: 4px;
-	font-size: 12px;
-	background-color: #ff9999;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  border: solid black 2px;
+  border-radius: 50%;
+  padding: 3px 8px 3px 8px;
+  position: absolute;
+  right: -15px;
+  bottom: 4px;
+  font-size: 12px;
+  background-color: #ff9999;
 }

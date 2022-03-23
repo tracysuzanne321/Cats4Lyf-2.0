@@ -27,6 +27,8 @@ body {
   margin-bottom: 25px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  position: fixed;
+  width: 100%;
 }
 .nav ul {
   list-style-type: none;
@@ -48,7 +50,7 @@ body {
 
 .nav-cart {
   position: absolute;
-  left: 80%;
+  left: 75%;
 }
 
 .shop-button {
@@ -59,7 +61,9 @@ body {
 
 .hero {
   display: flex;
-  margin: 0;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-bottom: 25px;
   background-color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -70,6 +74,7 @@ body {
 .hero-button {
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 }
 .hero-side button {
   color: white;
@@ -99,8 +104,8 @@ body {
 .hero img {
   min-width: 60%;
   margin: 0;
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   height: 450px;
   object-fit: cover;
   object-position: top;
@@ -131,8 +136,31 @@ body {
 .hero-side h4 {
   font-family: "Quicksand", sans-serif;
   font-weight: 200;
-  font-size: 25pxpx;
+  font-size: 25px;
   text-align: center;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  margin-top: 150px;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 15px;
+  border: solid 4px #ffc8c8;
+  justify-content: center;
+}
+
+.about-me img {
+  min-width: 60%;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 450px;
+  object-fit: cover;
+  object-position: top;
 }
 .loading {
   margin: auto;
@@ -155,7 +183,7 @@ body {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   margin: 30px 0 30px 0;
 }
@@ -234,7 +262,9 @@ body {
   text-align: center;
   font-size: 25px;
   color: white;
-  margin: 0 auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .footer-1 {
@@ -354,4 +384,20 @@ span {
   bottom: 4px;
   font-size: 12px;
   background-color: #ff9999;
+}
+
+@media only screen and (min-width: 800px) {
+  .hero img {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+  }
+
+  .hero {
+    flex-direction: row;
+  }
+
+  .nav-cart {
+    left: 80%;
+  }
 }

@@ -10,14 +10,16 @@ import AboutMe from "./pages/AboutMe";
 
 const App = () => {
   const [basketItems, setBasketItems] = useState([]);
-  const [catImages, setCatImages] = useState([]);
   const [catData, setCatData] = useState([]);
 
   useEffect(() => {
     (async () => {
       const imgs = await GetImage();
-      const data = GetData();
-      setCatImages(imgs);
+      let data = GetData();
+      data = data.map((cat, i) => {
+        cat.image = imgs[i].url;
+        return cat;
+      });
       setCatData(data);
     })();
   }, []);
@@ -43,35 +45,14 @@ const App = () => {
         />
         <Switch>
           <Route exact path="/">
-            <Home
-              catData={catData}
-              catImages={catImages}
-              addToBasket={addToBasket}
-            />
+            <Home catData={catData} addToBasket={addToBasket} />
           </Route>
 
           <Route path="/AboutUs">
             <AboutUs />
           </Route>
           <Route path="/AboutMe">
-            {catData.length === 0 ? (
-              <div className="loading"></div>
-            ) : (
-              catImages.map((cat, i) => (
-                <AboutMe
-                  name={catData[i]?.name}
-                  price={catData[i]?.price}
-                  image={cat.url}
-                  key={cat.id}
-                  id={cat.id}
-                  addToBasket={addToBasket}
-                  breed={catData[i]?.breed}
-                  gender={catData[i]?.gender}
-                  age={catData[i]?.age}
-                  city={catData[i]?.city}
-                />
-              ))
-            )}
+            <AboutMe catData={catData} addToBasket={addToBasket} />
           </Route>
         </Switch>
 

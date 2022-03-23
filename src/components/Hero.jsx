@@ -4,7 +4,7 @@ const Hero = ({
   image,
   title,
   subtitle,
-  to,
+  to = "/",
   button,
   onClick,
   price,

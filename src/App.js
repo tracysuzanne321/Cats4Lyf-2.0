@@ -18,6 +18,7 @@ const App = () => {
       let data = GetData();
       data = data.map((cat, i) => {
         cat.image = imgs[i].url;
+        cat.id = i;
         return cat;
       });
       setCatData(data);
